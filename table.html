@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ZH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWPAW Web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+       <header>
+            <h1>PAWPAW Web</h1>
+            <p>介紹一下毛孩的可愛世界！</p>
+       </header>
+    
+
+       
+   <div class="content">
+    <form>
+         <p><strong>*為必填項目</strong></p>
+    
+         <table >
+            <caption>毛小孩資料</caption>
+            
+            <tr>
+                <th>主子名*</th>
+                <td><input type="text" name="petName" required></td>
+            </tr>
+            <tr>
+                <th>品種</th>
+                <td>
+                    <label><input type="radio" name="breed" value="dog" required>米克斯</label>
+                    <label><input type="radio" name="breed" value="cat" required>純種狗</td></label>
+            </tr>
+            <tr>
+                <th>年齡</th>
+                <td>
+                    <select name="age">
+                        <option value="">請選擇</option>
+                        <option value="0-1">未滿一歲</option>
+                        <option value="1-5">1-5歲</option>
+                        <option value="6-10">6-10歲</option>
+                        <option value="11-15">11-15歲</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>性別*</th>
+                <td>
+                    <label><input type="radio" name="gender" value="F" required checked>母</label>
+                    <label><input type="radio" name="gender" value="M">公</label>
+                </td>
+            </tr>
+            <tr>
+                <th>照片</th>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+         </table>
+
+         <table >
+            <caption>奴才資料</caption>
+            <tr>
+                <th>名字*</th>
+                <td>
+                    <input type="text" name="ownerName" required>
+                </td>
+            </tr>
+            <tr>
+                <th>年齡</th>
+                <td>
+                    <select name="age" >
+                        <option value="0-18">0-18歲</option>
+                        <option value="19-30">19-30歲</option>
+                        <option value="31以上">31歲以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>留言</th>
+                <td>
+                    <textarea name="message" id="" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+         </table>
+
+         <div class="btns">
+            <input type="submit" value="送出">
+            <input type="reset" value="重填">
+         </div>
+    
+    </form>
+   </div>
+    
+    
+   <footer>
+     <p> <small>Copyright © PawPawWeb Web All Rights Reserved.</small></p>
+    </footer>
+    </main>
+</body>
+</html>
